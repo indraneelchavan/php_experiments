@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+  <title> Routes</title>
+  <script>
+	function route(form){
+		
+		var rt_arr1=form.rt1;
+		var rt_arr2=form.rt2;
+
+		var values1 =[];
+		var values2 =[];
+
+		for(var i=0;i<rt_arr1.length;i++){
+			if(rt_arr1[i].checked){
+				values1.push(rt_arr1[i].value);
+			}
+		}
+
+		for(var j=0;j<rt_arr2.length;j++){
+			if(rt_arr2[j].checked){
+				values2.push(rt_arr2[j].value);
+			}
+		}
+		
+		for(var k=0;k<values1.length;k++){
+			for(var l=0;l<values2.length;l++){
+				if(values1[k] == values2[l]){
+					alert("They will meet at " + values1[k]);
+					return;
+				}
+			}
+		}
+
+		alert("Wont meet");
+
+	
+
+
+
+		/* alert(values1);
+		alert(values2);*/
+		
+	}
+
+  </script>
+ </head>
+
+ <body>
+  
+	<form onsubmit="route(this)">
+		<label for="rt1">Route 1</label>
+		<input type="checkbox" name="rt1" value="D">D
+		<input type="checkbox" name="rt1" value="E">E
+		<input type="checkbox" name="rt1" value="F">F
+		<input type="checkbox" name="rt1" value="G">G
+		<br/><br/>
+
+		<label for="rt2">Route 2</label>
+		<input type="checkbox" name="rt2" value="B">B
+		<input type="checkbox" name="rt2" value="E">E
+		<input type="checkbox" name="rt2" value="N">N
+		<input type="checkbox" name="rt2" value="G">G
+		<br/>
+		<input type="submit" name="submit" value="Route">
+	</form>
+
+	
+ </body>
+</html>

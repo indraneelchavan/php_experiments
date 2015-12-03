@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<books>
+	<book>
+		<title>Wings of Fire</title>
+		<author>Abdul Kalam</author>
+		<price>1000</price>
+	</book>
+
+	<book>
+		<title>Harry Potter</title>
+		<author>J.K. Rowling</author>
+		<price>1000</price>
+	</book>
+
+<book><title>Lord Of the Rings</title><author>JRR Tolkien</author><price>250</price></book><book><title>Lord Of the Rings</title><author>JRR Tolkien</author><price>250</price></book><book><title>Lord Of the Rings</title><author>JRR Tolkien</author><price>250</price></book><book><title>Book1</title><author>Aut1</author><price>222</price></book><book><title>Book1</title><author>Aut1</author><price>222</price></book><book><title>Book1</title><author>Aut1</author><price>222</price></book><book><title>Book1</title><author>Aut1</author><price>222</price></book><book><title>Book1</title><author>Aut1</author><price>222</price></book></books>

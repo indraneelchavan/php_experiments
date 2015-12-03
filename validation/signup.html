@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Signup Form</title>
+	<link rel="stylesheet" href="signup.css">
+</head>
+<body>
+
+
+    <div id="form-container">
+			
+		<div id="create"><h1>Register</h1></div>
+
+		<hr/>
+			<form action="validate.php" method="post" id="form-register">
+
+				<ul>
+					<li><label for="name">Name</label>
+					<input name= "name" id="name" type="text"></li>
+
+					<li><label for="email">E-mail</label>
+					<input name="email" type="email" id="email" /></li>
+
+					<li><label for="password">Password</label>
+					<input name="password" type="password" id= "password" ></li>				
+
+            		<li><label for="gender">Select Gender</label>
+					<input name= "gender" type="radio" value="Male">Male
+					<input name= "gender" type="radio" value="Female">Female</li>
+
+					<li><label for="hobby">Select Hobby</label>
+					<input name= "hobby[0]" type="checkbox" value="Cricket">Cricket
+					<input name= "hobby[1]" type="checkbox" value="Swimming">Swimming
+					<input name= "hobby[2]" type="checkbox" value="Football">Football</li>
+
+					<li><label for="city">Select City</label>
+					<select name="city">
+					<option value="Select">Select
+					<option value="Pune">Pune
+					<option value="Mumbai">Mumbai
+					<option value="Nagpur">Nagpur
+
+					</select></li>
+
+					<li><input type="submit" name="submit" value="submit" /></li>
+				</ul>
+			</form>
+		
+
+    </div>
+
+
+    
+	
+</body>
+</html>
