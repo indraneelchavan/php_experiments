@@ -1,5 +1,5 @@
 <?php
-	$d= scandir('kapil');
+	$d= scandir('indra');
 	echo "<pre>";
 
 	print_r($d);
@@ -8,7 +8,7 @@
 
 	foreach($d as $f){
 		if($f != '.' && $f != '..'){
-			echo "<img src='kapil/$f' height='100px' width='100px'/>&emsp;";
+			echo "<img src='indra/$f' height='100px' width='100px'/>&emsp;";
 		}
 	}
 ?>
